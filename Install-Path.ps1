@@ -1,12 +1,11 @@
 $paths = $env:Path -split ";"
-$hashSet = New-Object 'System.Collections.Generic.HashSet[string]'
+$pathSet = New-Object 'System.Collections.Generic.HashSet[string]'
 foreach ($path in $paths)
 {
-    $hashSet.Add($path)
+    $pathSet.Add($path)
 }
 
+$joinedPathSet = $pathSet -join ';'
+Write-Output $joinedPathSet
 
-foreach ($item in $hashSet)
-{
-    Write-Output $item
-}
+[Environment]::SetEnvironmentVariable("TEST", $joinedPathSet, "User")
