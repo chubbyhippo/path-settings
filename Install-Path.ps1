@@ -1,5 +1,5 @@
 $myPaths = "$HOME\.cargo\bin;" +
-"$HOME\.cargo\bin2;"
+        "put here;"
 $paths = $myPaths + $env:Path -split ";"
 $pathSet = New-Object 'System.Collections.Generic.HashSet[string]'
 foreach ($path in $paths)
