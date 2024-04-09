@@ -11,4 +11,4 @@ foreach ($path in $paths)
 $joinedPathSet = $pathSet -join ';'
 Write-Output $joinedPathSet
 
-[Environment]::SetEnvironmentVariable("TEST", $joinedPathSet, "User")
+[Environment]::SetEnvironmentVariable("PATH", $joinedPathSet, "User")
