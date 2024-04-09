@@ -1,4 +1,5 @@
 $myPaths = "$HOME\.cargo\bin;" +
+        "C:\tools\msys64\usr\bin;" +
         "put here;"
 $paths = $myPaths + $env:Path -split ";"
 $pathSet = New-Object 'System.Collections.Generic.HashSet[string]'
