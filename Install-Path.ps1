@@ -1,6 +1,6 @@
 $myPaths = "$HOME\.cargo\bin;" +
         "C:\tools\msys64\usr\bin;" +
-        "put here;"
+        "C:\tools\neovim\nvim-win64\bin;"
 $paths = $myPaths + $env:Path -split ";"
 $pathSet = New-Object 'System.Collections.Generic.HashSet[string]'
 foreach ($path in $paths)
