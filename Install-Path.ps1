@@ -1,5 +1,5 @@
 $myPaths = "$HOME\.cargo\bin;" +
-        "C:\tools\neovim\nvim-win64\bin;" +
+        "$HOME\scoop\apps\msys2\current\mingw64\bin;" +
         "$HOME\AppData\Local\JetBrains\Toolbox\scripts;" 
 
 $paths = $myPaths + $env:Path -split ";"
